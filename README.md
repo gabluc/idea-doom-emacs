@@ -186,8 +186,8 @@ You need to source `expand-region.vim` to enable these key bindings:
 
 | Key binding | Description                                       |
 |:------------|:--------------------------------------------------|
-| `C-+`       | Increase selected region by semantic units        |
-| `C-=`       | Contract the selected region to its previous size |
+| `K`       | Increase selected region by semantic units        |
+| `J`       | Contract the selected region to its previous size |
 
 ### In Project View
 

@@ -1,3 +1,2 @@
-map <C-S-=> <Action>(EditorSelectWord)
-vmap <C-S-=> <Action>(EditorSelectWord)
-vmap <C-=> <Action>(EditorUnSelectWord)
+map K <Action>(EditorSelectWord)
+map J <Action>(EditorUnSelectWord)
