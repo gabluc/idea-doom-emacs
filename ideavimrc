@@ -414,21 +414,40 @@ let g:WhichKeyDesc_search_project2 = '<leader>sp Search project'
 "
 " +window
 
+let g:WhichKeyDesc_window_leader = '<leader>w +window'
+" Window delete
 noremap <Leader>wc <C-w>c
+let g:WhichKeyDesc_window_delete = "<leader>wc Window delete"
+" Window delete 
 noremap <Leader>wd <C-w>c
+let g:WhichKeyDesc_window_delete_2 = "<leader>wd Window delete"
+" Left window 
 noremap <Leader>wh <C-w>h
+let g:WhichKeyDesc_window_left = "<leader>wh Window left"
+" Window down
 noremap <Leader>wj <C-w>j
+let g:WhichKeyDesc_window_down = "<leader>wj Window down"
+" Window up 
 noremap <Leader>wk <C-w>k
+let g:WhichKeyDesc_window_up = "<leader>wk Window up"
+" Window right 
 noremap <Leader>wl <C-w>l
+let g:WhichKeyDesc_window_right = "<leader>wl Window right"
+" Window split
 noremap <Leader>ws <C-w>s
+let g:WhichKeyDesc_window_split = "<leader>ws Window split"
+" Window vertical split
 noremap <Leader>wv <C-w>v
+let g:WhichKeyDesc_window_vsplit = "<leader>wv Window vertical split"
+" Next window 
 noremap <Leader>ww <C-w>w
+let g:WhichKeyDesc_window_next = "<leader>ww Next window"
+" Previous window 
 noremap <Leader>wW <C-w>W
-noremap <Leader>wq <C-w>c
+let g:WhichKeyDesc_window_previous = "<leader>wW Previous window"
 " Maximize window
 noremap <Leader>wm <Action>(Unsplit)
-let g:WhichKeyDesc_window_leader = '<leader>w +window'
-
+let g:WhichKeyDesc_window_maximize = "<leader>wm Maximize window"
 
 "
 " Emulated plugins

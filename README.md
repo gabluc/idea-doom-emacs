@@ -161,22 +161,18 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +window
 
-| Key binding          | Equivalent to |
-|:---------------------|:--------------|
-| `SPC w c`, `SPC w d` | `C-w c`     |
-| `SPC w h`            | `C-w h`     |
-| `SPC w j`            | `C-w j`     |
-| `SPC w k`            | `C-w k`     |
-| `SPC w l`            | `C-w l`     |
-| `SPC w s`            | `C-w s`     |
-| `SPC w v`            | `C-w v`     |
-| `SPC w w`            | `C-w w`     |
-| `SPC w W`            | `C-w W`     |
-
-| Key binding | Description               |
-|:------------|:--------------------------|
-| `SPC w m`   | Maximize window (unsplit) |
-
+| Key binding          | Description     |
+|:---------------------|:----------------|
+| `SPC w c`, `SPC w d` | Window delete   |
+| `SPC w h`            | Window left     |
+| `SPC w j`            | Window down     |
+| `SPC w k`            | Window up       |
+| `SPC w l`            | Window right    |
+| `SPC w s`            | Window split    |
+| `SPC w v`            | Window vsplit   |
+| `SPC w w`            | Next window     |
+| `SPC w W`            | Previous window |
+| `SPC w m`            | Maximize window |
 
 ### expand-region
 
