@@ -1,6 +1,6 @@
 # idea-doom-emacs
 
-Doom Emacs key bindings in IdeaVim.
+Doom Emacs key bindings in IdeaVim, with some custom additions.
 
 ![Screenshot](https://raw.githubusercontent.com/sei40kr/idea-doom-emacs/master/screenshot.png)
 
@@ -25,14 +25,15 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 
 ### +buffer
 
-| Key binding          | Description        |
-|:---------------------|:-------------------|
-| `SPC b d`, `SPC b k` | Kill buffer        |
-| `SPC b s`            | Save buffer        |
-| `SPC b K`            | Kill all buffers   |
-| `SPC b N`            | New empty buffer   |
-| `SPC b O`            | Kill other buffers |
-| `SPC b S`            | Save all buffers   |
+| Key binding          | Description             |
+|:---------------------|:------------------------|
+| `SPC b d`, `SPC b k` | Kill buffer             |
+| `SPC b s`            | Save buffer             |
+| `SPC b K`            | Kill all buffers        |
+| `SPC b N`            | New empty buffer        |
+| `SPC b O`            | Kill other buffers      |
+| `SPC b S`            | Save all buffers        |
+| `SPC b r`            | Recent buffer (location)|
 
 ### +code
 
@@ -50,6 +51,8 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC c r`   | Rename                              |
 | `SPC c t`   | Find type definition                |
 | `SPC c C`   | Recompile                           |
+| `SPC c m`   | Toggle bookmark                     |
+| `SPC c b`   | Toggle breakpoint                   |
 
 ### +file
 
@@ -77,7 +80,8 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC g B`        | Blame                 |
 | `SPC g C`        | Clone                 |
 | `SPC g F`        | Fetch                 |
-| `SPC g S`        | Git stage file        |
+| `SPC g p`        | Push                  |
+| `SPC g P`        | Pull                  |
 
 #### +create
 
@@ -138,8 +142,10 @@ source /path/to/idea-doom-emacs/subword-mode.vim
 | `SPC p i`   | Invalidate project cache |
 | `SPC p p`   | Switch projects          |
 | `SPC p R`   | Run project              |
+| `SPC p D`   | Debug project            |
 | `SPC p t`   | Show TODO                |
 | `SPC p z`   | List project tasks       |
+| `SPC p s`   | Stop project task        |
 
 ### +toggle
 

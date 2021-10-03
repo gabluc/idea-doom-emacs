@@ -3,6 +3,7 @@
 let mapleader = " "
 
 set clipboard+=unnamed
+set ideastatusicon=gray
 set commentary
 set history
 set ignorecase
@@ -117,7 +118,15 @@ let g:WhichKeyDesc_kill_other_buffers = '<leader>bO Kill other buffers'
 " Save all buffers
 noremap <Leader>bS :<C-u>wa<CR>
 let g:WhichKeyDesc_save_all_buffers = '<leader>bS Save all buffers'
-
+" Go to previous buffer
+nmap [b <Action>(PreviousTab)
+let g:WhichKeyDesc_go_to_previous_buffer = "[b Go to previous buffer"
+" Go to next buffer
+nmap ]b <Action>(NextTab)
+let g:WhichKeyDesc_next_buffer = "]b Go to next buffer"
+" Recent buffer 
+nmap <Leader>br <Action>(RecentLocations)
+let g:WhichKeyDesc_recent_buffer = "<leader>br Recent buffer"
 
 "
 " +code
@@ -151,6 +160,12 @@ let g:WhichKeyDesc_show_doc = '<leader>ck Show documentation'
 " Organize imports
 map <Leader>co <Action>(OptimizeImports)
 let g:WhichKeyDesc_organize_imports = '<leader>co Organize imports'
+" Toggle bookmark
+map <Leader>cm <Action>(ToggleBookmark)
+let g:WhichKeyDesc_code_toggle_bookmark = "<leader>cm Toggle bookmark"
+" Toggle breakpoint 
+map <Leader>cb <Action>(ToggleLineBreakpoint)
+let g:WhichKeyDesc_code_toggle_breakpoint = "<leader>cb Toggle breakpoint"
 " Rename
 map <Leader>cr <Action>(RenameElement)
 let g:WhichKeyDesc_rename = '<leader>cr Rename'
@@ -248,6 +263,12 @@ let g:WhichKeyDesc_clone1 = '<leader>gC Clone'
 " Fetch
 map <Leader>gF <Action>(Git.Fetch)
 let g:WhichKeyDesc_fetch = '<leader>gF Fetch'
+" Push
+map <Leader>gp <Action>(Vcs.Push)
+let g:WhichKeyDesc_git_push = '<leader>gp Push'
+" Pull
+map <Leader>gP <Action>(Git.Pull)
+let g:WhichKeyDesc_git_pull = '<leader>gP Pull'
 " Git stage file
 map <Leader>gS <Action>(Git.Add)
 let g:WhichKeyDesc_git_stage_file = '<leader>gS Git stage file'
@@ -367,9 +388,14 @@ let g:WhichKeyDesc_show_todo = '<leader>pt Show TODO'
 map <Leader>pz <Action>(RunAnything)
 let g:WhichKeyDesc_list_project_tasks = '<leader>pz List project tasks'
 " Run project
-map <Leader>pR <Action>(Run)
+map <Leader>pR <Action>(ChooseRunConfiguration)
 let g:WhichKeyDesc_run_project = '<leader>pR Run project'
-
+" Debug project
+map <Leader>pD <Action>(ChooseDebugConfiguration)
+let g:WhichKeyDesc_debug_project = '<leader>pD Debug project'
+" Stop project task
+map <Leader>ps <Action>(Stop)
+let g:WhichKeyDesc_stop_project_task = '<leader>ps Stop project task'
 
 "
 " +toggle
@@ -405,6 +431,9 @@ let g:WhichKeyDesc_search_leader = '<leader>s +search'
 " Search project
 map <Leader>sp <Action>(FindInPath)
 let g:WhichKeyDesc_search_project2 = '<leader>sp Search project'
+" Jump to symbol 
+map <leader>si <Action>(FileStructurePopup)
+let g:WhichKeyDesc_search_jump_to_symbol = "<leader>si Jump to symbol"
 
 
 "
