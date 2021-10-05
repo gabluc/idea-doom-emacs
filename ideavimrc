@@ -78,7 +78,9 @@ map <Leader>. <Action>(SearchEverywhere)
 let g:WhichKeyDesc_find_file1 = '<leader>. Find file'
 " Jump to bookmark
 map <Leader><CR> <Action>(Bookmarks)
+map <Leader><Enter> <Action>(Bookmarks)
 let g:WhichKeyDesc_jump_to_bookmark = '<leader><Enter> Jump to bookmark'
+let g:WhichKeyDesc_jump_to_bookmark_2 = '<leader>⏎ Jump to bookmark'
 " Switch buffer
 map <Leader>\< <Action>(Switcher)
 let g:WhichKeyDesc_switch_buffer = '<leader>< Switch buffer'
@@ -91,7 +93,7 @@ let g:WhichKeyDesc_toggle_last_popup = '<leader>~ Toggle last popup'
 
 "
 " +easymotion
-let g:WhichKeyDesc_jump_to_bookmark = '<leader><leader> +easymotion'
+let g:WhichKeyDesc_easy_motion_base = '<leader><leader> +easymotion'
 
 
 "
@@ -179,6 +181,10 @@ let g:WhichKeyDesc_find_type_def = '<leader>ct Find type definition'
 " Recompile
 map <Leader>cC <Action>(Compile)
 let g:WhichKeyDesc_recompile = '<leader>cC Recompile'
+" Show errors 
+map <Leader>cx <Action>(ActivateProblemsViewToolWindow)
+let g:WhichKeyDesc_all_errors = '<leader>cx Show errors'
+
 
 " Show error description
 map <C-c>!h <Action>(ShowErrorDescription)
